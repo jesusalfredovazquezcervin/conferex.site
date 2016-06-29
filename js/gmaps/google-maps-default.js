@@ -1,9 +1,9 @@
 var map;
 
 function initialize() {
-  var myLatlng = new google.maps.LatLng(44.4325, 26.1039);
+  var myLatlng = new google.maps.LatLng(20.6628299,-100.4405128);
   var mapOptions = {
-    zoom: 12,
+    zoom: 16,
 	scrollwheel: false,
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -14,12 +14,12 @@ function initialize() {
       position: myLatlng,
       map: map,
 	  animation: google.maps.Animation.DROP,
-      title: 'Hello World!'
+      title: 'Conferex'
   });
   
-  var contentString = '<div class="info-window-content"><h2>Web Pixels</h2>'+
-  					  '<h3>Designing forward</h3>'+
-					  '<p>Some more details for directions or company informations...</p></div>';
+  var contentString = '<div class="info-window-content"><h2>Conferex</h2>'+
+  					  '<h3>Hacia una mejor comunicacion</h3>'+
+					  '<p>Aqui van las indicaciones para llegar</p></div>';
 					  
   var infowindow = new google.maps.InfoWindow({
       content: contentString
