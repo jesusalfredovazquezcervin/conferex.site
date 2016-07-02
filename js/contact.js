@@ -25,7 +25,8 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message
+                    message: message,
+                    company: company
                 },
                 cache: false,
                 success: function() {
