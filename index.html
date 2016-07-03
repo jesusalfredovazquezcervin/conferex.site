@@ -407,54 +407,32 @@ No necesita descargar software ni comprar equipos extras. La utilización de nue
                         Envianos tus dudas o comentarios y nos pondremos en contacto a la brevedad.
                         </p>
                         
-                        <form class="form-light mt-20" name="sentMessage" id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Nombre completo</label>
-                                        <input id="name" type="text" class="form-control" placeholder="Escriba su nombre"
-                                               required data-validation-required-message="Por favor escribe tu nombre">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Empresa</label>
-                                        <input id="company" type="text" class="form-control" placeholder="Escriba su empresa">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Email</label>
-                                        <input id="email" type="email" class="form-control" placeholder="Esctiba su email"
-                                               required data-validation-required-message="Por favor escribe tu email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Telefono</label>
-                                        <input id="phone" type="text" class="form-control" placeholder="Escriba su telefono">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label>Comentarios</label>
-                                <textarea class="form-control" id="message" placeholder="Escriba sus comentarios"
-                                          required data-validation-required-message="Por favor escribe tus comentarios" style="height:100px;"></textarea>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <button type="reset" class="btn btn-light">Borrar</button>
-                                </div>
-                                <div class="col-md-6">
-                                    <button type="submit" class="btn btn-base btn-icon btn-icon-right btn-fly pull-right">
-                                        <span>Enviar mensaje</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        <div id="contactfrm">
+          <form name="sentMessage" id="contactForm" novalidate> <!-- Form Wrapper -->
+                  <div id="form" class="contact-form">  
+                    <div class="form-group">
+                      <input type="text" autocomplete="off" class="form-control" placeholder="Tu nombre *" id="name" required data-validation-required-message="Por favor escribe tu nombre.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                      
+                    <div class="form-group">
+                      <input type="email" autocomplete="off" class="form-control" placeholder="Tu Email *" id="email" required data-validation-required-message="Por favor escribe tu email.">                            
+                      <p class="help-block text-danger"></p>
+                    </div>
+                        
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4" placeholder="Tu mensaje *" id="message" required data-validation-required-message="Por favor escribe tu mensaje."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-default btn-block my-btn">Enviar ahora</button> <!-- Send button -->
+                  </div>
+                </form><!-- End Form Wrapper -->
+          
+	  				</div>	
                     </div>
                     
                     
