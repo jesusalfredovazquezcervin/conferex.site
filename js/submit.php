@@ -15,8 +15,8 @@ $message = $_POST['message'];
 $company = $_POST['company'];
 
 // Create the email and send the message
-$to = 'aenciso@conferex.mx'; // Add your email address in between the '' replacing jennpereira13@gmail.com - This is where the form will send a message to.
-//$cc = 'jesuscervin@icloud.com';
+$to = 'conferexmx@gmail.com'; // Add your email address in between the '' replacing jennpereira13@gmail.com - This is where the form will send a message to.
+$cc = 'jesuscervin@icloud.com';
 $email_subject = "Conferex Forma de contacto:  $name";
 $email_body = "Has recibido un nuevo mensaje a traves de la forma de contacto del sitio de Conferex.mx.\n\n"."A continuacion los detalles:\n\nNombre: $name\n\nEmpresa:\n$company\n\nEmail: $email_address\n\nMensaje:\n$message";
 $headers = "From: noreply@conferex.mx\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
